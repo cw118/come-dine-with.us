@@ -1,6 +1,8 @@
 from flask_wtf import FlaskForm
 from wtforms import StringField, PasswordField, BooleanField, SubmitField
 from wtforms.validators import DataRequired, Length, EqualTo
+from flask import redirect, session
+from functools import wraps
 
 class LoginForm(FlaskForm):
     username = StringField('Username', validators=[DataRequired()])
@@ -23,3 +25,16 @@ class SignUp(FlaskForm):
     ])
     confirm = PasswordField('Confirm your new password')
     submit = SubmitField('Create account')
+    
+def login_required(f):
+    """
+    Written by Harvard CS50 staff: Decorate routes to require login.
+
+    https://flask.palletsprojects.com/en/1.1.x/patterns/viewdecorators/
+    """
+    @wraps(f)
+    def decorated_function(*args, **kwargs):
+        if session.get("user_id") is None:
+            return redirect("/login")
+        return f(*args, **kwargs)
+    return decorated_function
