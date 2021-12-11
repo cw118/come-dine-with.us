@@ -3,3 +3,5 @@ Flask-Migrate
 Flask-SQLAlchemy
 Flask-WTF
 WTForms
+python-dotenv
+Flask-Session
