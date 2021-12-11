@@ -34,5 +34,10 @@ def login():
         return redirect(url_for('index'))
     return render_template('login.html', title='Sign In', form=form)
 
+@app.route('/signup', methods=['GET', 'POST'])
+def signup():
+    # To-do: Register a new user
+    form = SignUp()
+    return render_template('signup.html', title='Sign Up', form=form)
 
 app.run(host='0.0.0.0', port=81)
