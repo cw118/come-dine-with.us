@@ -3,7 +3,7 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <meta name="description" content="Share your extra portions with a buddy nearby">
+        <meta name="description" content="Never dine alone; come dine with us!">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <!-- Bootstrap 5.1 -->
@@ -19,11 +19,14 @@
         <link href="/static/favicon.png" type="image/png" rel="icon">
 
         <!-- Google Fonts -->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Yellowtail&display=swap">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 
         {% if title %}
-        <title>{{ title }} | microblog</title>
+        <title>{{ title }} | Dine With Us</title>
         {% else %}
         <title>microblog</title>
         {% endif %}
@@ -31,7 +34,7 @@
     <body>
         <nav class="navbar navbar-dark bg-dark navbar-expand-lg mb-3">
             <div class="container-fluid">
-                <span class="navbar-brand mb-0 h1">Microblog:</span>
+                <span class="navbar-brand mb-0 h1" id="brand"><img class="d-inline-block align-text-top" alt="soup logo" width="30" height="24" src="{{url_for('static', filename='soup.svg')}}" />&nbsp;come-dine-with.us</span>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>

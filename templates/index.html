@@ -1,8 +1,17 @@
 {% extends "base.html" %}
 
 {% block content %}
+    <h1><strong>Welcome to <em>Come Dine With Us!</em></strong></h1>
+    <div>
+        <img class="float-start img-fluid" alt="Two people dining together" src="{{url_for('static', filename='home-hero.svg')}}" />
+        <div class="container-custom">
+            <h3>Never dine alone...</h3>
+        </div>
+    </div>
     <h1>Hi, {{ user.username }}!</h1>
     {% for post in posts %}
-    <div class="user-post"><p>{{ post.author.username }} says: <b>{{ post.body }}</b></p></div>
+    <div class="user-post">
+        <p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
+    </div>
     {% endfor %}
 {% endblock %}

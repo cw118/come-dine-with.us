@@ -23,6 +23,14 @@ body {
     align-items: center;
 }
 
+.container-custom {
+    padding: 30px 15px;
+}
+
+ul, ul li {
+    padding-left: 15px;
+}
+
 .form-wrapper {
     max-width: 400px;
     background: #FFF;
@@ -37,6 +45,11 @@ body {
 
 .form {
     font-family: Inter, sans-serif;
+}
+
+#brand {
+    font-family: Yellowtail, Helvetica;
+    font-size: 26px;
 }
 
 #submit {
