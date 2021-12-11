@@ -1,10 +1,14 @@
 # 🍽️ *come-dine-with.us: sharing food with a community*
 
-![Thumbnail](https://github.com/piaoruilin/come-dine-with.us/raw/main/dine-with-us.gif)
+[![Thumbnail](https://github.com/piaoruilin/come-dine-with.us/raw/main/dine-with-us.gif)](https://devpost.com/software/come-dine-with-us)
 
-### *Never dine alone; come dine with us!*
+### Developed for MLH's [Bon Hacketit 2.0 🍲](https://bonhacketittwo.devpost.com/) by:
+- [Ruilin Piao](https://github.com/piaoruilin)
+- [Carolyn Wu](https://github.com/cw118)
+- [Elapoidea Oswald](https://github.com/Elapoidea)
+- [Chandu Vadde](https://github.com/Chandu2000)
 
-## Inspiration
+## ✨ *Never dine alone; come dine with us!*
 No one likes to eat alone, and no one wants extra food (especially when it's homemade!) to go to waste—come-dine-with.us solves both problems in one!
 
 ## What it does
