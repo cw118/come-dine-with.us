@@ -5,7 +5,7 @@
     <div class="form-wrapper">
         <div class="form-container">
             <h1 class="form">Sign In</h1><br>
-            <form class="form" id="login-form" action="" method="post" novalidate>
+            <form class="form" action="" method="post" novalidate>
                 {{ form.hidden_tag() }}
                 <p>
                     {{ form.username.label }}<br>
@@ -24,6 +24,9 @@
                 <p>{{ form.remember_me() }} {{ form.remember_me.label }}</p>
                 <p>{{ form.submit() }}</p>
             </form>
+            <div class="form-text">
+                Don't have an account? <a href="/signup">Sign up here</a>.
+            </div>
         </div>
     </div>
     </div>
