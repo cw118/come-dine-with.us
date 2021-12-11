@@ -8,6 +8,51 @@ html {
     scroll-behavior: smooth;
 }
 
+:root {
+    --main-bg-color: #FFE16B;
+}
+
 body {
-    background: #FFE16B;
+    background: var(--main-bg-color);
+    font-family: Montserrat, Calibri;
+}
+
+.center-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-wrapper {
+    max-width: 400px;
+    background: #FFF;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.error-text {
+    color: red;
+}
+
+.form {
+    font-family: Inter, sans-serif;
+}
+
+#submit {
+    padding: 3px 5px;
+    background: #E5E7E6;
+    width: 100%;
+    text-align: center;
+    border-radius: 4px;
+    border: solid 1px gray;
+    transition-duration: 0.4s;
+}
+
+#submit:hover {
+    background: #bfbfbf;
+}
+
+h1 {
+    text-align: center;
 }

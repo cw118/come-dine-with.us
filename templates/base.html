@@ -22,18 +22,33 @@
         <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
 
         {% if title %}
-        <title>{{ title }} - microblog</title>
+        <title>{{ title }} | microblog</title>
         {% else %}
         <title>microblog</title>
         {% endif %}
     </head>
     <body>
-        <div>
-            Microblog:
-            <a href="{{ url_for('index') }}">Home</a>
-            <a href="{{ url_for('login') }}">Login</a>
-        </div>
-        <hr>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg mb-3">
+            <div class="container-fluid">
+                <span class="navbar-brand mb-0 h1">Microblog:</span>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('index') }}">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ url_for('login') }}">Login</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <br>
+        <div class="container-fluid">
         {% with messages = get_flashed_messages() %}
         {% if messages %}
         <ul>
@@ -44,5 +59,6 @@
         {% endif %}
         {% endwith %}
         {% block content %}{% endblock %}
+        </div>
     </body>
 </html>
