@@ -24,11 +24,27 @@ body {
 }
 
 .container-custom {
-    padding: 30px 15px;
+    padding: 15px 20px;
+    font-family: Segoe UI, sans-serif;
 }
 
-ul, ul li {
-    padding-left: 15px;
+.home-bubble {
+    border-radius: 8px;
+    background: #FFF;
+    padding: 15px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.home-bubble div {
+    padding: 20px;
+}
+
+.home-bubble p {
+    font-size: 18px;
+    font-style: italic;
+    line-height: 2;
+    text-indent: 15px;
 }
 
 .form-wrapper {
@@ -68,4 +84,8 @@ ul, ul li {
 
 h1 {
     text-align: center;
+}
+
+.lobster {
+    font-family: Lobster, Helvetica;
 }

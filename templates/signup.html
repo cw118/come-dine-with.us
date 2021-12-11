@@ -1,7 +1,7 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <div class="center-container">
+    <div class="center-container mt-3">
         <div class="form-wrapper">
             <div class="form-container">
                 <h1 class="form">Sign Up</h1><br>
@@ -37,6 +37,9 @@
                     </p>
                     <p>{{ form.submit() }}</p>
                 </form>
+                <div class="form-text">
+                    Already have an account? <a href="/login">Login here</a>.
+                </div>
             </div>
         </div>
     </div>

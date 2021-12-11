@@ -1,17 +1,30 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1><strong>Welcome to <em>Come Dine With Us!</em></strong></h1>
+    <h1 class="lobster">Welcome to <em>Come-Dine-With-Us!</em></h1>
     <div>
-        <img class="float-start img-fluid" alt="Two people dining together" src="{{url_for('static', filename='home-hero.svg')}}" />
         <div class="container-custom">
-            <h3>Never dine alone...</h3>
+            <div class="home-bubble">
+                <div class="text-start">
+                    <h3>Don't dine alone...</h3>
+                    <p>Don't want to eat alone, or don't feel like preparing a meal? Find a post you like and meet up!</p>
+                    <img class="rounded img-fluid" alt="Two people dining together"
+                        src="{{url_for('static', filename='home-hero.svg')}}" />
+                </div>
+                <div class="text-end">
+                    <img class="rounded img-fluid mb-3" alt="Two people having spaghetti"
+                        src="{{url_for('static', filename='dine-out-hero_2.svg')}}" />
+                    <h3>Don't let your cooking go to waste...</h3>
+                    <p>Cooked too much food? Let people know with a post and share with others!</p>
+                </div>
+                
+            </div>
         </div>
     </div>
-    <h1>Hi, {{ user.username }}!</h1>
+    <!-- <h1>Hi, {{ user.username }}!</h1>
     {% for post in posts %}
     <div class="user-post">
         <p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
     </div>
-    {% endfor %}
+    {% endfor %} -->
 {% endblock %}
