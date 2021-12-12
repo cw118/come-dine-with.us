@@ -1,26 +1,80 @@
 {% extends "base.html" %}
 
 {% block content %}
-    <h1 class="lobster">Welcome to <em>Come-Dine-With-Us!</em></h1>
-    <div>
-        <div class="container-custom">
-            <div class="home-bubble">
-                <div class="text-start">
-                    <h3>Don't dine alone...</h3>
-                    <p>Don't want to eat alone, or don't feel like preparing a meal? Find a post you like and meet up!</p>
-                    <img class="rounded img-fluid" alt="Two people dining together"
-                        src="{{url_for('static', filename='home-hero.svg')}}" />
+    <h1 class="main-heading">Welcome to <em>Come-Dine-With-Us!</em></h1>
+    <div class="home-bubble">
+        <div class="text-start">
+            <h3><strong>Don't dine alone...</strong></h3>
+            <p>Don't want to eat alone, or don't feel like preparing a meal? Find a post you like and meet up!</p>
+            <img class="rounded img-fluid" alt="Two people dining together"
+                src="{{url_for('static', filename='dine-out-hero_1.png')}}" />
+        </div>
+        <div class="text-end">
+            <img class="rounded img-fluid mb-3" alt="Two people having spaghetti"
+                src="{{url_for('static', filename='dine-out-hero_2.svg')}}" />
+            <h3 class="mt-2"><strong>Don't let your cooking go to waste...</strong></h3>
+            <p>Cooked too much food? Let people know with a post and share with others!</p>
+        </div>
+    </div>
+
+    <p class="mt-4 mb-0 label-heading">A home-cooked meal is calling you...</p>
+    <div id="lower-section">
+        <div id="carouselExampleControls" class="mt-2 float-start carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="{{url_for('static', filename='carousel_1.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>It's food o'clock!</h5>
+                        <p>It's <em>always</em> food o'clock though, am I right? <span class="cite">(Photo by Tomoyo S.)</span></p>
+                    </div>
                 </div>
-                <div class="text-end">
-                    <img class="rounded img-fluid mb-3" alt="Two people having spaghetti"
-                        src="{{url_for('static', filename='dine-out-hero_2.svg')}}" />
-                    <h3>Don't let your cooking go to waste...</h3>
-                    <p>Cooked too much food? Let people know with a post and share with others!</p>
+                <div class="carousel-item">
+                    <img src="{{url_for('static', filename='carousel_2.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Nothing brings people together like <strong>food</strong>!</h5>
+                        <p>And coffee. Coffee's great too. <span class="cite">(Photo by Jed Owen)</span></p>
+                    </div>
                 </div>
-                
+                <div class="carousel-item">
+                    <img src="{{url_for('static', filename='carousel_3.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>The more the merrier!</h5>
+                        <p>Remember to stay healthy and safe! <span class="cite">(Photo by Luisa Brimble)</span></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for('static', filename='carousel_4.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Mmm, pizza...</h5>
+                        <p>Look at all those toppings! <span class="cite">(Photo by Karthik Garikapati)</span></p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="{{url_for('static', filename='carousel_5.jpg')}}" class="d-block w-100" alt="...">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h5>Are those homemade cookies I smell?</h5>
+                        <p>Fresh out of the oven? Even better! <span class="cite">(Photo by Lindsey Savage)</span></p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div class="card float-end">
+            <img src="{{url_for('static', filename='soup.svg')}}" alt="Bowl of soup" />
+            <div class="card-body">
+                <h4 class="card-title mb-3"><em><u>Join the come-dine-with.us community now:</u></em></h4>
+                <a href="{{ url_for('signup') }}" class="btn btn-outline-light">Sign Up</a>
             </div>
         </div>
     </div>
+
     <!-- <h1>Hi, {{ user.username }}!</h1>
     {% for post in posts %}
     <div class="user-post">

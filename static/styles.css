@@ -23,17 +23,11 @@ body {
     align-items: center;
 }
 
-.container-custom {
-    padding: 15px 20px;
-    font-family: Segoe UI, sans-serif;
-}
-
 .home-bubble {
-    border-radius: 8px;
+    border-radius: 50px 15px;
     background: #FFF;
-    padding: 15px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    padding: 30px 20px;
+    border: solid 1px #e6e6e6;
 }
 
 .home-bubble div {
@@ -41,10 +35,53 @@ body {
 }
 
 .home-bubble p {
+    font-family: Segoe UI, sans-serif;
     font-size: 18px;
     font-style: italic;
     line-height: 2;
     text-indent: 15px;
+}
+
+.home-bubble img {
+    opacity: 0.65;
+    transition-duration: 0.5s;
+    box-shadow: 5px 10px 18px #888888;
+}
+
+.home-bubble img:hover {
+    opacity: 1;
+}
+
+.carousel {
+    margin: 0px 20px;
+    box-shadow: 2px 5px 25px #E6E6E6;
+}
+
+.carousel-caption {
+    background: rgba(120, 120, 120, 0.7);
+    transition-duration: 0.4s;
+    padding: 15px 15px 5px;
+    font-family: Calibri, sans-serif;
+}
+
+.carousel-caption:hover {
+    background: rgba(120, 120, 120, 0.9);
+}
+
+.carousel-caption p {
+    color: #bebebe;
+    font-size: 17px;
+}
+
+.cite {
+    color: #808080;
+    font-size: 12px;
+    font-family: Arial;
+    transition-duration: 0.5s;
+}
+
+.cite:hover {
+    color: #bebebe;
 }
 
 .form-wrapper {
@@ -86,6 +123,67 @@ h1 {
     text-align: center;
 }
 
-.lobster {
+.main-heading {
     font-family: Lobster, Helvetica;
+    font-weight: normal;
+    transition-duration: 0.2s;
+}
+
+.main-heading:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.label-heading {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    background: #46344E;
+    padding: 15px;
+    border-radius: 15px 50px 0px 0px;
+}
+
+div#lower-section {
+    display: grid;
+    padding: 25px;
+    background: #b9acae;
+    border-radius: 0px 0px 15px 50px;
+    margin-bottom: 20px;
+}
+
+.card {
+    width: 100%;
+    font-family: Segoe UI, sans-serif;
+    text-align: center;
+    background: #9B786F;
+    color: white;
+    margin-top: 20px;
+    box-shadow: 2px 4px 30px #e6e6e6;
+}
+
+.card img {
+    width: 40%;
+    margin: auto;
+}
+
+@media screen and (min-width: 760px) {
+    div#lower-section {
+        padding: 25px 20px 25px 8px;
+        grid-template-columns: 55% 45%;
+        align-items: center;
+    }
+    .card {
+        margin-top: 10px;
+    };
+}
+
+@media screen and (min-width: 1000px) {
+    .home-bubble {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .label-heading {
+        font-size: 1.5em;
+    };
 }

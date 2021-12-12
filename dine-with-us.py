@@ -7,6 +7,8 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
 from datetime import datetime
 
+# Code based on Harvard CS50 Finance (pset 9) and https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-iv-database
+
 app = Flask(__name__)
 app.config.from_object(Config)
 
@@ -51,8 +53,8 @@ class Post(db.Model):
         return '<Post {}>'.format(self.body)
 
 @app.route('/')
-@app.route('/index')
 def index():
+    # Demo placholder from mega-Flask tutorial
     user = {'username': 'Miguel'}
     posts = [
         {
@@ -65,6 +67,10 @@ def index():
         }
     ]
     return render_template('index.html', title='Home', user=user, posts=posts)
+
+@app.route('/about')
+def about():
+    return render_template('about.html', title='About Us')
 
 @app.route('/login', methods=['GET', 'POST'])
 def login():
