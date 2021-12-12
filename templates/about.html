@@ -2,5 +2,29 @@
 
 {% block content %}
     <h1 class="main-heading">About <em>come-dine-with.us</em></h1>
+    <div class="about-bubble">
+        <h3 class="text-start">The Team</h3>
+        <p>We're a group of 4 programming enthusiasts from all around the world—we connected with each other thanks to Discord, and while the time difference certainly complicated communication and project development, we're still proud of what we put together:</p>
+        <ul>
+            <li>Ruilin Piao <a href="https://github.com/piaoruilin" target="_blank"><span class="iconify" data-icon="akar-icons:github-fill"></span></a>&nbsp;<a href="https://devpost.com/piaoruilin" target="_blank"><span class="iconify" data-icon="simple-icons:devpost"></span></a></li>
+            <li>Carolyn Wu <a href="https://github.com/cw118" target="_blank"><span class="iconify" data-icon="akar-icons:github-fill"></span></a>&nbsp;<a href="https://devpost.com/cw118" target="_blank"><span class="iconify" data-icon="simple-icons:devpost"></span></a></li>
+            <li>Elapoidea Oswald <a href="https://github.com/Elapoidea" target="_blank"><span class="iconify" data-icon="akar-icons:github-fill"></span></a>&nbsp;<a href="https://devpost.com/Elapoidea" target="_blank"><span class="iconify" data-icon="simple-icons:devpost"></span></a></li>
+            <li>Chandu Vadde <a href="https://github.com/Chandu2000" target="_blank"><span class="iconify" data-icon="akar-icons:github-fill"></span></a>&nbsp;<a href="https://devpost.com/vaddechandu44" target="_blank"><span class="iconify" data-icon="simple-icons:devpost"></span></a></li>
+        </ul><hr>
+        <h3 class="text-end">The Project and Vision</h3>
+        <p><span id="project-name">come-dine-with.us</span> was our project for <a href="https://bonhacketittwo.devpost.com/" target="_blank">Bon Hacketit 2.0</a>, a 48-hour long hackathon organized by <abbr title="Major League Hacking">MLH</abbr>.</p>
+        <img src="{{ url_for('static', filename='dine-with-us.gif') }}" class="img-fluid img-thumbnail mb-3" alt="Come dine with us, sharing food with a community" />
+        <p><u>The pitch:</u> a site for posting about food you'd like to share. Maybe you cooked too much and you're not sure what to do with the extras, or you don't feel like cooking and don't want to eat alone <em>(or all of those combined)</em>—<strong>come-dine-with.us</strong> has you covered!</p>
+        <p><u>Tech specs:</u> a Flask app in the form of a responsive website. HTML and CSS <em>(+ Bootstrap)</em> on the frontend, with Python and some SQL on the server-side.</p>
+        <p>View the project on Devpost: <a href="https://devpost.com/software/come-dine-with-us" target="_blank" class="copy-all">https://devpost.com/software/come-dine-with-us</a></p>
+        <p>Additionally, you can find the source code at our GitHub repository here: <a href="https://github.com/piaoruilin/come-dine-with.us" class="copy-all" target="_blank">https://github.com/piaoruilin/come-dine-with.us</a></p><hr>
+        <h3 class="text-start" id="left-align">What's Next</h3>
+        <p>The time constraint and communication barriers due to time zones hindered our team's ability to complete the app's implementation, but here are some of the main features we'd originally planned to include:</p>
+        <ul>
+            <li>User sign-up and login</li>
+            <li>Post filters: find destinations nearby, exclude ingredients based on applicable allergies, etc.</li>
+            <li>Mapping component: show the destination linked to a post and get directions</li>
+        </ul>
+    </div>
 
 {% endblock %}

@@ -22,35 +22,35 @@
         <div id="carouselExampleControls" class="mt-2 float-start carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img src="{{url_for('static', filename='carousel_1.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{url_for('static', filename='carousel_1.jpg')}}" class="d-block w-100" alt="Two steaming bowls of curry rice">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>It's food o'clock!</h5>
                         <p>It's <em>always</em> food o'clock though, am I right? <span class="cite">(Photo by Tomoyo S.)</span></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{url_for('static', filename='carousel_2.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{url_for('static', filename='carousel_2.jpg')}}" class="d-block w-100" alt="Extravagant meal on a table">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Nothing brings people together like <strong>food</strong>!</h5>
                         <p>And coffee. Coffee's great too. <span class="cite">(Photo by Jed Owen)</span></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{url_for('static', filename='carousel_3.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{url_for('static', filename='carousel_3.jpg')}}" class="d-block w-100" alt="People sharing a meal around a circular table">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>The more the merrier!</h5>
                         <p>Remember to stay healthy and safe! <span class="cite">(Photo by Luisa Brimble)</span></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{url_for('static', filename='carousel_4.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{url_for('static', filename='carousel_4.jpg')}}" class="d-block w-100" alt="Homemade the works pizza in a cast iron pan">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Mmm, pizza...</h5>
                         <p>Look at all those toppings! <span class="cite">(Photo by Karthik Garikapati)</span></p>
                     </div>
                 </div>
                 <div class="carousel-item">
-                    <img src="{{url_for('static', filename='carousel_5.jpg')}}" class="d-block w-100" alt="...">
+                    <img src="{{url_for('static', filename='carousel_5.jpg')}}" class="d-block w-100" alt="Chocolate chip cookies next to a cookie rack">
                     <div class="carousel-caption d-none d-md-block">
                         <h5>Are those homemade cookies I smell?</h5>
                         <p>Fresh out of the oven? Even better! <span class="cite">(Photo by Lindsey Savage)</span></p>
@@ -74,11 +74,9 @@
             </div>
         </div>
     </div>
-
-    <!-- <h1>Hi, {{ user.username }}!</h1>
-    {% for post in posts %}
-    <div class="user-post">
-        <p>{{ post.author.username }} says: <b>{{ post.body }}</b></p>
+    <div class="learn-more">
+        <h4>Want to learn more about the <strong><em>come-dine-with.us</em></strong> project?</h4>
+        <hr>
+        <a href="{{ url_for('about') }}" class="btn btn-warning">About Us</a>
     </div>
-    {% endfor %} -->
 {% endblock %}
