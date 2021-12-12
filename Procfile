@@ -1,1 +1,1 @@
-web: gunicorn dine-with-us:app
+web: gunicorn wsgi:app
