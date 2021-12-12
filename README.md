@@ -16,7 +16,7 @@ No one likes to eat alone, and no one wants extra food (especially when it's hom
 Create an account, then log in to view and make posts about sharing extra food with users nearby.
 * Filter the selections.
 
-## How we built it
+## 🛠 How we built it
 * We created a Flask app with the help of a few tutorials
 * We used HTML and CSS for the user interface, which was developed with a mobile-first approach, and added Bootstrap styles
 * We included Flask extensions like SQL-Alchemy (along with SQLite), Flask-Migrate, Flask-Session and more, initially with the intent of implementing features such as login, sign-up and more
