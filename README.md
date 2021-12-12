@@ -20,6 +20,7 @@ Create an account, then log in to view and make posts about sharing extra food w
 * We created a Flask app with the help of a few tutorials.
 * We used HTML and CSS for the user interface, which was developed with a mobile-first approach, and added Bootstrap styles.
 * We implemented login and register functionality through Flask extensions like SQL-Alchemy (along with SQLite), Flask-Migrate, Flask-Session and more.
+* We have a chatbot that was developed and hosted in google cloud. The bot takes questions about come-dine-with.us and the platform features.
 
 ## 🙅🏻‍♀️ Challenges we ran into
 * 4 passionate people from all around the world met up in Discord to work on this project. Naturally, the time zone difference and communication barrier made it hard to communicate efficiently.
