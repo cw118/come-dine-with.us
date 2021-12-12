@@ -8,38 +8,28 @@
 - [Elapoidea Oswald](https://github.com/Elapoidea)
 - [Chandu Vadde](https://github.com/Chandu2000)
 
-## 💡 Inspiration
+## 💡 **Inspiration**
 No one likes to eat alone, and no one wants extra food (especially when it's homemade!) to go to waste—come-dine-with.us solves both problems in one!
 
-## ⚙️ What it does
+## ⚙️ **What It Does**
 * Cooked too much food and not sure what to do about it? Join the come-dine-with.us community! 
 Create an account, then log in to view and make posts about sharing extra food with users nearby.
 * Filter the selections.
 
-## 🛠 How we built it
-* We created a Flask app with the help of a few tutorials
-* We used HTML and CSS for the user interface, which was developed with a mobile-first approach, and added Bootstrap styles
-* We included Flask extensions like SQL-Alchemy (along with SQLite), Flask-Migrate, Flask-Session and more, initially with the intent of implementing features such as login, sign-up and more
-* We made and added a chatbot developed and hosted in Google Cloud that takes questions about **come-dine-with.us** and the site's features
+## 🛠 **How It Was Built**
+* `python`
+* `html`
+* `css (bootstrap)`
+* `flask`
+* `sqlite`
+* `sqlalchemy`
 
-## 🙅🏻 Challenges we ran into
-* 4 passionate people from all around the world met up in Discord to work on this project. Naturally, the time zone difference and communication barrier made it hard to communicate efficiently.
-* A lot had to be learned in a very limited period of time, and we had very ambitious plans for this project (lots of features).
-* It was quite difficult to figure out how SQL-Alchemy and Flask-Migrate went together and to configure the database for our custom purposes.
-* CSS decided to be weird (as usual), especially with vertical centering.
-* Figuring out web development as we go.
+## 🏃🏻 **How To Run It**
+1. Install Flask : [LINK](https://flask.palletsprojects.com/en/2.0.x/quickstart/)
+2. Configure Flask environment variable: ``` FLASK_APP=dine-with-us```
+3. Run flask: ``` flask run ```
 
-## 📌 Accomplishments that we're proud of 
-* Creating a full-stack website with everyone contributing equal parts.
-* For most of us, learning entire languages and/or frameworks in less than 48 hours!
-* Being on the same page despite the time zone difference and minimal communication.
-
-## 📚 What we learned
-* Teamwork makes the dreamwork, for sure. 🌈
-* Forming a database using SQLAlchemy and integrating it into our Python code.
-* Communication is key in any group work!
-
-## 🗓 What's next for come-dine-with.us
-* Addition of a mapping API or feature to find places near you
+## 🗓 **What's Next?**
+* Addition of a mapping API or feature to find places near you.
 * Sign in using cloud accounts like Google, GitHub, etc.
 * Layer of extra security and verification methods to remove users with malicious intent.
