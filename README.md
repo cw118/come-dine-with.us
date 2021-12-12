@@ -2,7 +2,7 @@
 
 [![Thumbnail](https://github.com/piaoruilin/come-dine-with.us/raw/main/static/dine-with-us.gif)](https://devpost.com/software/come-dine-with-us)
 
-### Developed for MLH's [Bon Hacketit 2.0 🍲](https://bonhacketittwo.devpost.com/) by:
+### Developed for MLH's [Bon Hacketit 2.0 🍲](https://devpost.com/software/come-dine-with-us) by:
 - [Ruilin Piao](https://github.com/piaoruilin)
 - [Carolyn Wu](https://github.com/cw118)
 - [Elapoidea Oswald](https://github.com/Elapoidea)
@@ -25,9 +25,7 @@ Create an account, then log in to view and make posts about sharing extra food w
 * `sqlalchemy`
 
 ## 🏃🏻 **How To Run It**
-1. Install Flask : [LINK](https://flask.palletsprojects.com/en/2.0.x/quickstart/)
-2. Configure Flask environment variable: ``` FLASK_APP=dine-with-us```
-3. Run flask: ``` flask run ```
+[See DOCS.md](DOCS.md) for a guide to setting up the Flask app locally.
 
 ## 🗓 **What's Next?**
 * Addition of a mapping API or feature to find places near you.
