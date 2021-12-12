@@ -11,13 +11,15 @@
 ## ✨ *Never dine alone; come dine with us!*
 No one likes to eat alone, and no one wants extra food (especially when it's homemade!) to go to waste—come-dine-with.us solves both problems in one!
 
-## What it does
+## What we wanted it to do *(our original plans)*
 Cooked too much food and not sure what to do about it? Join the come-dine-with.us community! 
 Create an account, then login to view and make posts about sharing extra food with users nearby.
 
+Unfortunately, not everything went as planned and we weren't able to implement a completely functional app we had originally thought out.
+
 ## How we built it
 * We created a Flask app with the help of a few tutorials
-* We used HTML and CSS for the user interface, and added Bootstrap styles
+* We used HTML and CSS for the user interface, which was developed with a mobile-first approach, and added Bootstrap styles
 * We implemented login and register functionality through Flask extensions like SQL-Alchemy (along with SQLite), Flask-Migrate, Flask-Session and more
 
 ## 🙅🏻‍♀️ Challenges we ran into
@@ -28,6 +30,7 @@ Create an account, then login to view and make posts about sharing extra food wi
 
 ## Accomplishments that we're proud of 
 * Creating a full-stack website with everyone contributing equal parts.
+* Implementing a chatbot
 * For most of us, learning entire languages and/or frameworks in less than 48 hours!
 
 ## What we learned
