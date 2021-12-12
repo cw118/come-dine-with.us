@@ -15,7 +15,7 @@ No one likes to eat alone, and no one wants extra food (especially when it's hom
 Cooked too much food and not sure what to do about it? Join the come-dine-with.us community! 
 Create an account, then login to view and make posts about sharing extra food with users nearby.
 
-Unfortunately, not everything went as planned and we weren't able to implement a completely functional app we had originally thought out.
+Unfortunately, not everything went as planned and we weren't able to implement the completely functional app we had originally thought out.
 
 ## How we built it
 * We created a Flask app with the help of a few tutorials
