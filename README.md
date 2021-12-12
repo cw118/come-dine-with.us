@@ -1,6 +1,6 @@
 # 🍽️ *come-dine-with.us: sharing food with a community*
 
-[![Thumbnail](https://github.com/piaoruilin/come-dine-with.us/raw/main/dine-with-us.gif)](https://devpost.com/software/come-dine-with-us)
+[![Thumbnail](https://github.com/piaoruilin/come-dine-with.us/raw/main/static/dine-with-us.gif)](https://devpost.com/software/come-dine-with-us)
 
 ### Developed for MLH's [Bon Hacketit 2.0 🍲](https://bonhacketittwo.devpost.com/) by:
 - [Ruilin Piao](https://github.com/piaoruilin)
@@ -20,9 +20,10 @@ Unfortunately, not everything went as planned and we weren't able to implement t
 ## How we built it
 * We created a Flask app with the help of a few tutorials
 * We used HTML and CSS for the user interface, which was developed with a mobile-first approach, and added Bootstrap styles
-* We implemented login and register functionality through Flask extensions like SQL-Alchemy (along with SQLite), Flask-Migrate, Flask-Session and more
+* We included Flask extensions like SQL-Alchemy (along with SQLite), Flask-Migrate, Flask-Session and more, initially with the intent of implementing features such as login, sign-up and more
+* We made and added a chatbot developed and hosted in Google Cloud that takes questions about **come-dine-with.us** and the site's features
 
-## 🙅🏻‍♀️ Challenges we ran into
+## 🙅🏻 Challenges we ran into
 * 4 passionate people from all around the world met up in Discord to work on this project. Naturally, the time zone difference and communication barrier made it hard to communicate efficiently.
 * A lot had to be learned in a very limited period of time.
 * It was quite difficult to figure out how SQL-Alchemy and Flask-Migrate went together and to configure the database for our custom purposes.
@@ -30,7 +31,7 @@ Unfortunately, not everything went as planned and we weren't able to implement t
 
 ## Accomplishments that we're proud of 
 * Creating a full-stack website with everyone contributing equal parts.
-* Implementing a chatbot
+* Implementing a chatbot and using Google Cloud
 * For most of us, learning entire languages and/or frameworks in less than 48 hours!
 
 ## What we learned
