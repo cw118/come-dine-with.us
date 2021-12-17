@@ -79,7 +79,7 @@ You should see some output similar to the following:
 
 ## Setup for multi-time use
 
-To run the Flask app multiple times across "different terminals" (meaning you kill your terminal at some point in development), we will still need to set `FLASK_APP` and `FLASK_ENV`. *If you only want or need to run app once, or you prefer to set up manually each time, go to [Setup for one-time use](#setup-for-one-time-use).
+To run the Flask app multiple times across "different terminals" (meaning you kill your terminal at some point in development), we will still need to set `FLASK_APP` and `FLASK_ENV`. *If you only want or need to run app once, or you prefer to set up manually each time, go to [Setup for one-time use](#setup-for-one-time-use).*
 
 This setup method is extremely simple: create a `.flaskenv` file in the root folder *(note that this file extension has been configured to be ignored by `Git` in `.gitignore`)*.
 
