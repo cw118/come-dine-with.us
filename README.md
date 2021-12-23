@@ -1,7 +1,8 @@
 # 🍽️ *come-dine-with.us: sharing food with a community*
 
 [![Thumbnail](https://github.com/piaoruilin/come-dine-with.us/raw/main/static/dine-with-us.gif)](https://devpost.com/software/come-dine-with-us)
-*Winner of MLH Bon Hacketit 2.0 Hackathon*
+
+*Winner of MLH Bon Hacketit 2.0 Hackathon (Best use of Google Cloud)*
 
 ### Developed for MLH's [Bon Hacketit 2.0 🍲](https://devpost.com/software/come-dine-with-us) by:
 - [Ruilin Piao](https://github.com/piaoruilin)
